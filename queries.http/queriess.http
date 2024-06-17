@@ -1,0 +1,25 @@
+#################################################
+
+GET http://localhost:4004/odata/v4/catalog/Books
+
+#################################################
+
+POST http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{"title":"Rich Dad Poor Dad"}
+
+#########cuid, managed
+
+POST http://localhost:4004/odata/v4/catalog/Orders
+Content-Type: application/json
+
+{
+    "book_ID": 421,
+    "quantity": 10
+}
+
+#########
+
+GET http://localhost:4004/odata/v4/catalog/Orders
+

@@ -1,0 +1,21 @@
+###
+
+GET http://localhost:4004/odata/v4/catalog/Authors?$expand=books
+
+###
+
+GET http://localhost:4004/odata/v4/catalog/Books?$expand=author
+
+####
+
+POST http://localhost:4004/odata/v4/catalog/Authors
+Content-Type: application/json
+
+{"ID":111, "name": "Abhijeet"}
+
+###
+
+POST http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{"ID":113, "title": "NewBook2", "stock": 10, "author_ID": 170}
