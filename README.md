@@ -1,5 +1,6 @@
 ## adding some text into feature branch.
 # Getting Started
+# New line from BAS to Git : checking 
 
 Welcome to your new project.
 
